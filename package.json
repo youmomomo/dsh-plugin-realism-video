@@ -1,0 +1,45 @@
+{
+  "name": "dsh-plugin-realism-video",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.0"
+  },
+  "packageManager": "pnpm@10.9.0",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "prepare:release": "pnpm build && git diff --exit-code lib"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "*",
+    "@deepseek-ai/dsh-tools": "*",
+    "@deepseek-ai/schemastery": "*"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "4.1.0",
+    "@deepseek-ai/dsh-llm": "0.0.1-rc.1",
+    "@deepseek-ai/dsh-scope": "0.0.1-rc.1",
+    "@deepseek-ai/dsh-session": "0.0.1-rc.1",
+    "@deepseek-ai/dsh-timeout": "0.0.1-rc.1",
+    "@deepseek-ai/dsh-tools": "0.0.1-rc.1",
+    "@deepseek-ai/schemastery": "3.19.0",
+    "@types/node": "^22.20.5",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
