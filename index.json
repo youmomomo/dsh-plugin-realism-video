@@ -1,0 +1,43 @@
+{
+  "format": 1,
+  "title": {
+    "en": "youmomomo plugins",
+    "zh": "youmomomo 的插件"
+  },
+  "description": {
+    "en": "Personal DSH plugin index.",
+    "zh": "个人 DSH 插件索引。"
+  },
+  "plugins": [
+    {
+      "name": "dsh-plugin-realism-video",
+      "title": {
+        "en": "Realism Video",
+        "zh": "现实感视频生成器"
+      },
+      "description": {
+        "en": "Turn one idea into a set of realism-style shot videos with character consistency.",
+        "zh": "把一句创意变成一组现实感风格的分镜视频，并保持角色一致。"
+      },
+      "author": "youmomomo",
+      "homepage": "https://github.com/youmomomo/dsh-plugin-realism-video#readme",
+      "repository": {
+        "url": "https://github.com/youmomomo/dsh-plugin-realism-video"
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794200866,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/youmomomo/dsh-plugin-realism-video",
+            "commit": "a560798a2a96451569288a45e365670633f1ef4f"
+          },
+          "engines": {
+            "dsh": ">=0.2.0"
+          }
+        }
+      ]
+    }
+  ]
+}
